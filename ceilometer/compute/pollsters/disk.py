@@ -562,16 +562,11 @@ class _DiskInfoPollsterBase(pollsters.BaseComputePollster):
             per_disk_capacity = {}
             per_disk_allocation = {}
             per_disk_physical = {}
-            #disk_info = inspector.inspect_disk_info(
+            # disk_info = inspector.inspect_disk_info(
             #    instance)
-            #for disk, info in disk_info:
+            # for disk, info in disk_info:
             #    all_capacity += info.capacity
             #    all_allocation += info.allocation
-                all_physical += 1
-                all_capacity += 1
-                all_allocation += 1
-                all_physical += 1
-
             #    per_disk_capacity[disk.device] = info.capacity
             #    per_disk_allocation[disk.device] = info.allocation
             #    per_disk_physical[disk.device] = info.physical

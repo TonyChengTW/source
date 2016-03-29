@@ -212,8 +212,8 @@ class LibvirtInspector(virt_inspector.Inspector):
                 [target.get("dev")
                  for target in tree.findall('devices/disk/target')]):
             disk = virt_inspector.Disk(device=device)
-            #block_info = domain.blockInfo(device)
-            #info = virt_inspector.DiskInfo(capacity=block_info[0],
+            # block_info = domain.blockInfo(device)
+            # info = virt_inspector.DiskInfo(capacity=block_info[0],
             #                               allocation=block_info[1],
             #                               physical=block_info[2])
             info = virt_inspector.DiskInfo(capacity='1',
